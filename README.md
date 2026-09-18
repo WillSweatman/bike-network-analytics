@@ -10,6 +10,11 @@ means of the hire count itself). An XGBoost model is compared against a
 seasonal-naive baseline (predicting the same weekday's count from the
 previous week).
 
+**v0.2** — adds London daily weather (temperature, precipitation) as
+features. Evaluated against the saved v0.1 model on the same test set:
+a 5.8% MAE improvement, though recent hire history (`rolling_mean_7`,
+`lag_1`) still dominates feature importance - see `docs/NOTES.md`.
+
 ## Repository structure
 
 ```
@@ -20,6 +25,8 @@ notebooks/
   01_data_prep.ipynb           joins raw data, engineers features
   02_data_exploration.ipynb    EDA - trend, seasonality, correlations
   03_training_and_modelling.ipynb   baseline vs. XGBoost model
+docs/
+  NOTES.md      dated log of observations worth remembering
 ```
 
 ## Setup

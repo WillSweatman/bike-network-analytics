@@ -7,3 +7,7 @@ __pycache__/
 .env
 .env.*
 
+data/processed/*
+!data/processed/.gitkeep
+data/features/*
+!data/features/.gitkeep

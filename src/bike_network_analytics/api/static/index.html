@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bike Network Analytics — Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main>
+        <h1>London Cycle Hire Demand Forecast</h1>
+        <p class="subtitle">
+            Region A only for now — dates from v0.2's held-out test period only (not the training
+            range, and not beyond known demand).
+        </p>
+
+        <form id="forecast-form">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required />
+            <button type="submit">Get forecast</button>
+        </form>
+
+        <p id="error" class="error" hidden></p>
+
+        <section id="result" hidden>
+            <p class="predicted-hires"><span id="predicted-hires"></span> predicted hires</p>
+            <p class="actual-hires"><span id="actual-hires"></span> actual hires</p>
+            <dl>
+                <dt>Temperature</dt>
+                <dd id="temperature"></dd>
+                <dt>Precipitation</dt>
+                <dd id="precipitation"></dd>
+                <dt>Conditions</dt>
+                <dd id="weather-condition"></dd>
+                <dt>Bank holiday</dt>
+                <dd id="is-bank-holiday"></dd>
+            </dl>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

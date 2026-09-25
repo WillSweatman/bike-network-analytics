@@ -1,0 +1,54 @@
+body {
+    font-family: system-ui, sans-serif;
+    max-width: 32rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    color: #1a1a1a;
+}
+
+.subtitle {
+    color: #555;
+    margin-top: -0.5rem;
+}
+
+form {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-end;
+    margin: 1.5rem 0;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.error {
+    color: #b00020;
+}
+
+.predicted-hires {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.actual-hires {
+    color: #555;
+    margin-top: -0.5rem;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.25rem 1rem;
+}
+
+dt {
+    color: #555;
+}

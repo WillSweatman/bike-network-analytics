@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.git
+.vscode/
+tests/
+notebooks/
+docs/
+reports/
+data/processed/
+data/features/
+AGENTS.md
+PLAN.md
